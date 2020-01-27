@@ -7,13 +7,20 @@ describe('the fahrenheit-2-celcius canary spec', () => {
   });
 });
 
-describe.only('a fahrenheitToCelcius function should', () => {
+describe('a fahrenheitToCelcius function should', () => {
   it('return 0 for 32', () => {
-    console.log(fahrenheitToCelcius(32).should);
     expect(fahrenheitToCelcius(32)).toBe(0);
   });
-  it('return 10 for 50');
-  it('return 100 for 212');
-  it('return -40 for -40');
-  it('return -273.15 for -459.67');
+  it('return 10 for 50', () => {
+    expect(fahrenheitToCelcius(50)).toBe(10);
+  });
+  it('return 100 for 212', () => {
+    expect(fahrenheitToCelcius(212)).toBe(100);
+  });
+  it('return -40 for -40', () => {
+    expect(fahrenheitToCelcius(-40)).toBe(-40);
+  });
+  it('return -273.15 for -459.67', () => {
+    expect(fahrenheitToCelcius(-459.67)).toBe(-273.15);
+  });
 });
