@@ -10,9 +10,15 @@ describe.only('palindrome tests', () => {
   it('true for mom', () => {
     expect(isPalindrome('mom')).toBe(true);
   });
-  it.todo('false for dude')
-  it.todo('true for mom mom')
-  it.todo('true for whitespace')
+  it('false for dude', () => {
+    expect(isPalindrome('dude')).toBe(false);
+  });
+  it('true for mom dad', () => {
+    expect(isPalindrome('mom dad')).toBe(false);
+  });
+  it('false for whitespace', () => {
+    expect(isPalindrome(' ')).toBe(false);
+  })
   it.todo('error for empty string')
   it.todo('error for not a string')
 })
