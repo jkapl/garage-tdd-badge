@@ -1,3 +1,5 @@
+const isPalindrome = require('./palindrome.js');
+
 describe.only('the palindrome canary spec', () => {
   it('shows the infrastructure works', () => {
     expect(true).toBe(true);
@@ -5,7 +7,9 @@ describe.only('the palindrome canary spec', () => {
 });
 
 describe.only('palindrome tests', () => {
-  it.todo('true for mom')
+  it('true for mom', () => {
+    expect(isPalindrome('mom')).toBe(true);
+  });
   it.todo('false for dude')
   it.todo('true for mom mom')
   it.todo('true for whitespace')
