@@ -6,7 +6,7 @@ describe('the prime factors canary spec', () => {
   });
 });
 
-describe.only('a prime factors function should', () => {
+describe('a prime factors function should', () => {
   it('return none for 1', () => {
     expect(findPrimeFactors(1)).toEqual([]);    
   });
