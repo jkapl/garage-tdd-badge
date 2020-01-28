@@ -4,8 +4,10 @@ describe('the prime factors canary spec', () => {
   });
 });
 
-describe('a prime factors function should', () => {
-  it.todo('return none for 1');
+describe.only('a prime factors function should', () => {
+  it('return none for 1', () => {
+
+  });
   it.todo('return 2 for 2');
   it.todo('return 3 for 3');
   it.todo('return 2, 2 for 4');
